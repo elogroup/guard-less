@@ -86,7 +86,8 @@ module Guard
       end
       true
     rescue Exception => e
-      UI.info "Guard::Less: Compiling #{lessfile} failed with message: #{e.message}"
+      puts "erro => #{e}"
+      UI.info "[ERROR] =====>>> Guard::Less: Compiling #{lessfile} failed with message: #{e.message}"
       false
     end
 
